@@ -1,0 +1,24 @@
+all: point.o polynomial.o week_4_lab.o
+	g++ point.o polynomial.o  week_4_lab.o -o prog
+	
+
+point.o: point.cpp point.hpp
+	g++ -c point.cpp
+
+polynomial.o : polynomial.cpp polynomial.hpp
+	g++ -c polynomial.cpp 
+	
+week-4_lab.o: week_4_lab.cpp
+	g++ -c week_4_lab.cpp
+	
+run:
+	./prog
+#./prog.exe if Windows/Cygwin
+
+clean:
+	rm *.o prog
+# rm *.o prog.exe if Windows/Cygwin
+
+#structure
+#target: [dependencies list ...]
+#	commands #starts with a tabulation
