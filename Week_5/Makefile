@@ -1,5 +1,5 @@
-all: Base.o Derived.o derivedAgain.o
-	g++ Base.o Derived.o DerivedAgain.o  -o prog
+all: Base.o Derived.o DerivedAgain.o week_5.o
+	g++ Base.o Derived.o DerivedAgain.o week_5.o  -o prog
 	
 
 Base.o: Base.cpp Base.hpp

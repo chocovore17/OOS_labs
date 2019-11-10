@@ -1,9 +1,8 @@
 #include <iostream>
-#include "Base.hpp"
+#include "Derived.hpp"
 
 
-Derived::Derived() : Base() , n_base(0){}
-Derived::Derived(int n1 , int n2 , int n3) : Base(n1, n2), n_base(n3) {}
+
 void Derived::f() { 
     std::cout << "Derived::f()" << std::endl; 
 }

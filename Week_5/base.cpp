@@ -1,11 +1,6 @@
 #include <iostream>
-#include "base.hpp"
+#include "Base.hpp"
 
-void Base::f_prot();
-void Base::f();
-void Base::display();
-void Base::call_all_functions();
-void Base::f_priv();
 
 
 Base::Base() : n_priv(0), n_prot(0){};

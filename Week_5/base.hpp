@@ -1,5 +1,7 @@
 #ifndef BASE_HPP
 #define BASE_HPP
+#include <iostream>
+
 
 class Base {
     public: 
@@ -8,7 +10,7 @@ class Base {
         void f();
         void display();
         void call_all_functions();
-         ̃Base() {std::cout << "Base(): n_priv=' " << n_priv << ", n_prot = " << n_prot << "is leaving " << std::endl; }
+        ~Base() {std::cout << "Base(): n_priv=' " << n_priv << ", n_prot = " << n_prot << "is leaving " << std::endl; }
 
     private:
         int n_priv;
@@ -17,7 +19,6 @@ class Base {
 protected :
     int n_prot ;
     void f_prot() ;
-    }
 };
 
 #endif
