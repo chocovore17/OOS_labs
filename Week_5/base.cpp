@@ -6,7 +6,7 @@
 Base::Base() : n_priv(0), n_prot(0){};
 Base::Base(int n1, int n2) : n_priv(n1), n_prot(n2){}
 
-void Base::f() {
+ void Base::f() {
     std::cout << "Base::f()" << std::endl; 
 }
 void Base::display() {
